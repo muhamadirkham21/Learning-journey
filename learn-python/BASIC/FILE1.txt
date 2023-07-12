@@ -1,0 +1,6 @@
+email,nama,alamat
+muhirkham21@gmail.com,irkham,indonesia
+muhamad@gmail.com,muhamad,indonesia
+irkham@google.com,kham,arab
+ahmad@gmail.com,ahmad,qatar
+alrody@yahoo.com,rody,indonesia
