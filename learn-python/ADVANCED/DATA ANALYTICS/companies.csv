@@ -1,8 +1,8 @@
-,name,location,num employees
-0,grab,jakarta,10000
-1,traveloka,tangerang,11000
-2,telkom,bandung,12000
-3,bank indonesia,jakarta,9000
-4,gits,jakarta,9800
-5,BRI,bandung,8000
-6,YAMAHA,tangerang,10500
+name,location,num employees
+grab,jakarta,10000
+traveloka,tangerang,11000
+telkom,bandung,12000
+bank indonesia,jakarta,9000
+gits,jakarta,9800
+BRI,bandung,8000
+YAMAHA,tangerang,10500
