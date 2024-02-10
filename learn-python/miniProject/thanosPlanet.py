@@ -1,7 +1,7 @@
 # python 3.11.5
 
 
-def calculate_populations(day):
+def calculate_populations(day:int)->int:
 
     """
     Calculate the population growth over a given number of days.
