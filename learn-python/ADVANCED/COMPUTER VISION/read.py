@@ -22,5 +22,29 @@ def read_video(path):
     capture.release()
     cv2.destroyAllWindows()
 
+def read_stabil_video(path):
+
+    capture = cv2.VideoCapture(path)
+
+    if not capture.isOpened():
+        print("Error: Could not open video file.")
+        exit()
+    
+    while True:
+        ret, frame = capture.read()
+
+        if not ret:
+            print("End of video")
+            break
+
+        cv2.imshow('Video', frame)
+
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            break
+
+
+    capture.release()
+    cv2.destroyAllWindows()
+
 
 read_image('images/cat_2.jpg')

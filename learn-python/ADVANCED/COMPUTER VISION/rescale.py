@@ -1,6 +1,6 @@
 import cv2
 
-def rescale_frame(frame, scale=0.75):
+def rescale_frame(frame, scale=0.25):
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
 
@@ -33,5 +33,17 @@ def read_image(path):
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+def read_image_rescale_with_area(path, new_width, new_height):
+    img = cv2.imread(path)
+    
+    resized_img = cv2.resize(img, (new_width, new_height))
+    cv2.imshow('Image', resized_img)
+
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+read_image_rescale_with_area('images/cat-photo-hd.jpg', 300, 200)
+read_image_rescale_with_area('images/cat-photo-hd.jpg', 600, 400)
 
 
